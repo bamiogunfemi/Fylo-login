@@ -1,0 +1,201 @@
+
+  body{
+    font-size: 16px;
+    margin:0px;
+    height:100%;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif
+  }
+
+  
+  /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+    background-color: white;
+    color:black;
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #282385;
+    color: white;
+    cursor: pointer;
+    width:100%;
+    float:center;
+   
+
+    
+  }
+  input[type=submit]:hover {
+    background-color:  #282385;
+  }
+  
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    
+   
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* hide some text on medium and large screens */
+  .hide-or{
+    display: none;
+  }
+  
+  #access{
+    padding-top:2rem;
+    font-size: 2.5rem;
+    color:white;
+  }
+  .hero-illustration{
+    padding-top: 5rem;
+    float:right;
+     
+  }
+ 
+  .main { 
+    
+    background-image:linear-gradient(to right, #bbb8fa, #9691dd, #726bbf, #4f46a2, #282385);
+  }
+  .aside{
+  background: #e8e7fd;     
+
+  }
+  a{
+    text-decoration: none;
+  }
+.heading-1{
+  font-size: 2.5rem;
+}
+
+
+  .flt{
+    float:right;
+  }
+  #dont{
+    display:inline-block;
+    white-space:nowrap;
+    font-size: 1rem;
+
+
+  }
+  .log{
+    color: #282385;
+    font-weight: bold;
+  }
+  h2{
+    font-weight:bolder;
+  }
+  #in{
+    color: #9691dd;
+   
+  }
+.logo{
+    padding-top:2.5rem;
+}
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  padding: 1rem 3rem 4rem 2rem;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h3{
+    text-align: center;
+    padding:2rem 0 0 0
+  }
+ 
+
+/* Horizontal line before and after */
+   h3::before,
+  h3::after {
+    padding-right:3rem;
+      display: inline-block;
+      content: "";
+      border-top:  2px solid #9691dd;
+      width:6rem;
+      margin: 0 1rem;
+      transform: translateY(-1rem);
+  
+  }
+
+/* Placeholder */
+   ::-webkit-input-placeholder {
+      padding: 15px;
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+      padding: 2px;  
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+     padding: 2px;  
+  }
+  
+  :-ms-input-placeholder {  
+     padding: 2px;
+     }
+
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+      
+
+    .col {
+      width: 100%;
+      margin-top: 0;
+
+    }
+    /* hide the horizontal line */
+    h3{
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-or {
+      display: block;
+      text-align: center;
+    }
+    .html{
+        font-size: 0.5rem;
+    }
+    h3::before,
+    h3::after {
+        display:none;
+
+    }
+  }
+  
